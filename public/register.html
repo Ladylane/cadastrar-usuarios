@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <style>
+      table {
+          width: 100%;
+          max-width: 600px;
+          margin: auto;
+          border-collapse: collapse;
+      }
+
+      td {
+          padding: 8px;
+      }
+
+      input {
+          width: 100%;
+          padding: 8px;
+          box-sizing: border-box;
+      }
+
+      button {
+          width: 100%;
+          padding: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #45a049;
+      }
+
+      #errorContainer {
+          color: red;
+          margin-top: 20px;
+          text-align: center;
+          border: 1px solid red;
+          padding: 10px;
+          background-color: #ffe6e6;
+          border-radius: 5px;
+          display: none;
+      }
+
+      #errorContainer p {
+          margin: 0;
+      }
+  </style>
+</head>
+<body>
+<div id="errorContainer"></div>
+<form id="registerForm">
+  <table>
+    <tr>
+      <td><label for="name">Nome</label></td>
+      <td><input type="text" id="name" name="name" placeholder="Nome" required></td>
+    </tr>
+    <tr>
+      <td><label for="email">Email</label></td>
+      <td><input type="email" id="email" name="email" placeholder="Email" required></td>
+    </tr>
+    <tr>
+      <td><label for="password">Senha</label></td>
+      <td><input type="password" id="password" name="password" placeholder="Senha" required></td>
+    </tr>
+    <tr>
+      <td><label for="passwordConfirm">Confirmar Senha</label></td>
+      <td><input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Confirmar Senha" required>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="cep">CEP</label></td>
+      <td><input type="text" id="cep" name="cep" placeholder="CEP" required></td>
+    </tr>
+    <tr>
+      <td><label for="street">Rua</label></td>
+      <td><input type="text" id="street" name="street" placeholder="Rua" readonly></td>
+    </tr>
+    <tr>
+      <td><label for="number">Número</label></td>
+      <td><input type="text" id="number" name="number" placeholder="Número" required></td>
+    </tr>
+    <tr>
+      <td><label for="complement">Complemento</label></td>
+      <td><input type="text" id="complement" name="complement" placeholder="Complemento"></td>
+    </tr>
+    <tr>
+      <td><label for="neighborhood">Bairro</label></td>
+      <td><input type="text" id="neighborhood" name="neighborhood" placeholder="Bairro" readonly></td>
+    </tr>
+    <tr>
+      <td><label for="city">Cidade</label></td>
+      <td><input type="text" id="city" name="city" placeholder="Cidade" readonly></td>
+    </tr>
+    <tr>
+      <td><label for="state">Estado</label></td>
+      <td><input type="text" id="state" name="state" placeholder="Estado" readonly></td>
+    </tr>
+    <tr>
+      <td><label for="country">País</label></td>
+      <td><input type="text" id="country" name="country" placeholder="País" readonly></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit">Cadastrar</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <a href="login.html">Já tem cadastro? Login</a>
+      </td>
+    </tr>
+  </table>
+</form>
+<script src="utils.js" type="module"></script>
+<script src="register.js" type="module"></script>
+
+</body>
+</html>
